@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+    <title>Aside menu</title>
+  </head>
+  <body style="margin: 0; padding: 0; height: 100%">
+    <div style="height: 100%">
+      <aside
+        id="right-aside"
+        style="
+          height: 100%;
+          width: 300px;
+          background-color: #45a592;
+          float: left;
+          display: none;
+        "
+      >
+        <div id="profile-image"></div>
+        <p style="text-align: center">home</p>
+      </aside>
+      <div class="container" style="width: 100%-300px; text-align: center">
+        <button
+          id="openBtn"
+          style="background-color: #45a592; padding: 10px 30px"
+        >
+          open
+        </button>
+        <button
+          id="closeBtn"
+          style="background-color: #45a592; padding: 10px 30px; display: none"
+        >
+          close
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

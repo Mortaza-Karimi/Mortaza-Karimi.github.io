@@ -1,0 +1,37 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#startBtn {
+  padding: 10px 30px;
+  background-color: #4dbaa5;
+  border: none;
+  float: left;
+}
+
+#startBtn:focus {
+  background-color: #45a592;
+}
+
+#stopBtn {
+  padding: 10px 30px;
+  background-color: #da4c4b;
+  border: none;
+  float: right;
+}
+
+#stopBtn:focus {
+  background-color: #be4646;
+}
+
+#circle-animate {
+  background-color: #4dbaa5;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  left: 0px;
+  position: absolute;
+  top: 50px;
+}

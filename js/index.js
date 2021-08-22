@@ -16,11 +16,11 @@ const startAnimationFunction = () => {
 };
 
 const changePosition = () => {
-  if (pos == 500) {
+  if (pos == 501) {
     clearInterval(id);
     id = null;
   } else {
-    pos++;
+    pos += 1.5;
     circleAnimate.style.left = pos + "px";
   }
 };

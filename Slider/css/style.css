@@ -53,3 +53,19 @@
   transition: 1s;
   opacity: 0;
 }
+
+.slideCircleActive {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.slideCircle {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+}

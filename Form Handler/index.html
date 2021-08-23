@@ -10,22 +10,41 @@
   </head>
   <body>
     <div class="container">
-      <form action="#" id="form" method="GET">
+      <form action="#" id="form" method="POST">
         <label for="name">Name</label>
-        <input id="nameInput" name="name" type="text" style="float: right" />
+        <input
+          id="nameInput"
+          name="name"
+          type="text"
+          style="float: right"
+          required
+        />
         <br />
         <br />
         <label for="phone">phone</label>
-        <input id="phoneInput" name="phone" type="text" style="float: right" />
+        <input
+          id="phoneInput"
+          name="phone"
+          type="tel"
+          style="float: right"
+          pattern="09(0[1-2]|1[0-9]|3[0-9]|2[0-1])-?[0-9]{3}-?[0-9]{4}"
+          required
+        />
         <br />
         <br />
         <label for="department">department</label>
-        <input
-          id="departmentInput"
+
+        <select
           name="department"
-          type="text"
+          id="departmentInput"
           style="float: right"
-        />
+          required
+        >
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        </select>
         <br />
         <br />
         <span>message</span>
@@ -35,6 +54,7 @@
           cols="30"
           rows="10"
           style="float: right"
+          required
         ></textarea>
 
         <br />
@@ -48,7 +68,7 @@
         <br />
         <br />
 
-        <input type="file" id="image" name="iamge" />
+        <input type="file" id="image" name="iamge" required />
 
         <br />
         <br />
@@ -60,11 +80,11 @@
         <input type="checkbox" id="checkbox3" name="checkbox3" />checkbox3
         <br />
         <br />
-        <input type="radio" id="radio" name="radio" />Agreement
+        <input type="radio" id="radio" name="radio" required />Agreement
         <br />
         <br />
         <br />
-        <button id="submitBtn">submit</button>
+        <button id="submitBtn" disabled>submit</button>
       </form>
 
       <p id="result"></p>
